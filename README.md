@@ -1,4 +1,4 @@
-# README! - Final Projec
+# README! - Final Project
 
 For my project, I created a simple Flask application that utilized Flask, of course, Python, HTML, CSS, and the OpenWeather API. From this project, I learned the basics of Flask, API's with Json, and the basics of virtual environements which is what I used to run my web app on locally. The hardest challenge specifically, was that it took me a few hours to figure out the best way to get the user's input and send it back to flask. Originally, I was going to use JavaScript with jQuery but ended up searching the Flask documentation and found the easiest solution without having to implement JavaScript. 
 
