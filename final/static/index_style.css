@@ -1,0 +1,40 @@
+@font-face {
+	font-family: SourceCodePro-Bold;
+	src: url(SourceCodePro-Bold.ttf);
+	font-family: SourceCodePro-Light;
+	src: url(SourceCodePro-Light.ttf);
+}
+
+* {
+	font-family: SourceCodePro-Light;
+}
+
+h1 {
+	font-size: 65px;
+	margin-left: 100px;
+}
+
+footer {
+	height: 100px;
+	margin-left: 100px;
+	bottom: 0px;
+	position: absolute;
+	font-style: italic;
+	font-style: bold;
+	font-family: SourceCodePro-Light;
+}
+
+input {
+	background: none;
+	border-color: black;
+	font-family: SourceCodePro-Light;
+	border-width: 4px;
+}
+
+
+form {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

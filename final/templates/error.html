@@ -1,0 +1,17 @@
+<!doctype html>
+<title>PyWeather</title>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index_style.css') }}"/>
+</head>
+<body>
+	<h1>PyWeather.</h1>
+	<form id="city_form" action="{{ url_for('show_city') }}" method="post">
+		<h2 style="font-size: 32px;">'{{ city }}' doesn't quite sound right! Search again?</h2>
+		<input name="city_input" type="text" placeholder=" enter city here...">		
+		<input type="submit" value="Search City">
+	</form>
+
+	<footer>
+		<p>Created for CIS1051 by Brian Gunsel.</p>
+	</footer>
+</body>

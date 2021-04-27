@@ -1,0 +1,36 @@
+<!doctype html>
+<title>PyWeather</title>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='city_style.css') }}"/>
+</head>
+<body>
+	<ul id="header">
+		<li><h1>PyWeather.</h1></li>
+		<li><form id="city_form" action="{{ url_for('show_city') }}" method="post">
+			<input name="city_input" type="text" name="input_city" placeholder=" enter city here...">			
+			<input type="submit" value="Search City">
+		</form></li>
+	</ul>
+
+	<div id="weather">
+
+		<h2 style="font-size: 30px;">{{ data['city'] }}, {{ data['country'] }}</h2>
+		<h2 style="font-size: 60px;">{{ data['temp'] }}°F</h2>
+		<h2>
+			Today there is a high of {{ data['temp_max'] }}°F and a low of {{ data['temp_min'] }}°F. <br>Right now, it feels like {{ data['feels_like'] }}°F
+		</h2>
+		<h2 style="font-size: 20px;">
+			{{ data['description'] }}, 
+			{% if data['wind_speed'] > 20 %}
+				Warning! Wind speeds are currently at {{ data['wind_speed'] }}mph
+			{% else %}
+				Wind speed: {{ data['wind_speed'] }}mph
+			{% endif %}
+		</h2>
+
+	</div>	
+
+	<footer>
+		<p>Created for CIS1051 by Brian Gunsel.</p>
+	</footer>
+</body>
